@@ -24,9 +24,9 @@ func (s *Action) Create(ctx context.Context, c *cli.Context) error {
 	types := []string{
 		"Website Login",
 		"PIN Code (numerical)",
-		"Generic",
 		"AWS Secret Key",
 		"Google Service Account",
+		"Generic",
 	}
 	act, sel := cui.GetSelection(ctx, "Please select the type of secret you would like to create", "<↑/↓> to change the selection, <→> to select, <ESC> to quit", types)
 	switch act {
